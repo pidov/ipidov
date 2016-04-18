@@ -23,20 +23,19 @@
     </footer>
 
   </div>
-  <script>
-      // Load styles
-      var styles = ['https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,300,500,600,700,900&subset=latin,latin-ext', 'css/style.css'];
-      var cb = function() {
-        styles.forEach(function(style) {
-          var l = document.createElement('link'); l.rel = 'stylesheet';
-          l.href = style;
-          var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-        })
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(cb);
-      else window.addEventListener('load', cb);
-    </script>
+  <link href='css/style.css' rel='stylesheet' type='text/css'>
+  <script type="text/javascript">
+	  WebFontConfig = {
+	    google: { families: [ 'Source+Code+Pro:400,200,300,500,600,700,900:latin' ] }
+	  };
+	  (function() {
+	    var wf = document.createElement('script');
+	    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+	    wf.type = 'text/javascript';
+	    wf.async = 'true';
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(wf, s);
+	  })(); 
+  </script>
 </body>
 </html>
