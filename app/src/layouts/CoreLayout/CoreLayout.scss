@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: #0f0f23;
+  font-family: 'Source Code Pro';
+  color: #ccc;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.container {
+  flex: 1;
+  max-width: 600px;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+li {
+  margin: 15px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+}
